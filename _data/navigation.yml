@@ -2,10 +2,10 @@
 main:
   - title: "About"
     url: /about/
-   - title: "Multilevel Modeling Growth Curve"
-     url: https://github.com/junyanyao/MLM_GrowthCurve/blob/master/Python_VERSION_mlm.ipynb
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Multilevel Modeling Growth Curve"
+    url: https://nbviewer.jupyter.org/github/junyanyao/MLM_GrowthCurve/blob/master/Python_VERSION_mlm.ipynb
+  - title: "Text Analysis"
+    url: https://github.com/junyanyao/poster/blob/master/poster_v2.pdf
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
