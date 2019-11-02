@@ -109,16 +109,16 @@ analytics:
 author:
   name             : "Junyan Yao"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am Data Science Enthusiast."
-  location         : "Great New York Area"
+  bio              : "Data Science Enthusiast"
+  location         : "New York, NY"
   email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto: "yaojunyan1202@gmail.com"
-    - label: "Linkedin"
-      icon: "fas fa-fw fa-linkedin"
-      # url: "https://www.linkedin.com/in/junyanyao/"
+      # url: mailto:yaojunyan1202@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -134,7 +134,7 @@ author:
 
 # Site Footer
 footer:
-  links: 
+  links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
