@@ -4,8 +4,8 @@ title: "About"
 permalink: /about/
 author_profile: true
 excerpt: "something about me"
-header:
-    image: "/images/wsq.jpg"
+#header:
+#    image: "/images/wsq.jpg"
 ---
 
 # About me
