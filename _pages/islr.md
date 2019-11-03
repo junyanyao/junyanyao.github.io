@@ -4,39 +4,38 @@ permalink: /ISLR_Python/
 title: "Introduction to Statistical Learning in Python"
 author_profile: true
 ---
-This repo use Python to re-produce the lab results from the book [**Introduction to Statistical Learning with Application in R**](https://www-bcf.usc.edu/~gareth/ISL/) wittern by James, Witten, Hastie and Tibshirani. <br>It also includes the exercise solutions in Python3
+I use Python to re-produce the lab results and examples in each chapeter from the book [**Introduction to Statistical Learning with Application in R**](https://www-bcf.usc.edu/~gareth/ISL/) wittern by James, Witten, Hastie and Tibshirani. <br>It also includes the exercise solutions in Python3. This booked covers most of topics in machine learning. 
 
-Book Image: ![image](https://github.com/junyanyao/ISLR_Python/blob/master/Dataset/image.png)
 
->* [CHAPTER 2: Statistical Learning](https://github.com/junyanyao/ISLR_Python/blob/master/Ch2%20Statistical%20Learning%20Lab.ipynb)
->* [CHAPTER 3: Linear Regression](https://github.com/junyanyao/ISLR_Python/blob/master/Ch3%20Linear%20Regression.ipynb)
->* [CHAPTER 4: Classification](https://github.com/junyanyao/ISLR_Python/blob/master/Ch4%20Classification.ipynb)
+>* [CHAPTER 2: Statistical Learning](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch2%20Statistical%20Learning%20Lab.ipynb)
+>* [CHAPTER 3: Linear Regression](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch3%20Linear%20Regression.ipynb)
+>* [CHAPTER 4: Classification](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch4%20Classification.ipynb)
 >>* Logistic Regerssion
 >>* Linear Discrimnant Analysis
 >>* Quadratic Discrimnant Analysis
 >>* KNN
->* [CHAPTER 5: Resampling Methods](https://github.com/junyanyao/ISLR_Python/blob/master/Ch5%20Resampling%20Methods.ipynb)
+>* [CHAPTER 5: Resampling Methods](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch5%20Resampling%20Methods.ipynb)
 >>* Cross Validation
 >>* Bootstrap
->* [CHAPTER 6: Linear Model Selection and Regularization](https://github.com/junyanyao/ISLR_Python/blob/master/Ch6%20Linear%20Model%20Selection%20and%20Regularization.ipynb)
+>* [CHAPTER 6: Linear Model Selection and Regularization](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch6%20Linear%20Model%20Selection%20and%20Regularization.ipynb)
 >>* Best subset selection
 >>* Cross Valiation
 >>* Ridge/Lasso Regression
 >>* Principal Components Rregression
 >>* Partial Least Squares
->* [CHAPTER 7: Moving Beyond Linearity](https://github.com/junyanyao/ISLR_Python/blob/master/Ch7%20Move%20beyond%20Linearity.ipynb)
+>* [CHAPTER 7: Moving Beyond Linearity](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch7%20Move%20beyond%20Linearity.ipynb)
 >>* Polynomial Regression and Step Function
 >>* Splines
 >>* GAMs
->* [CHAPTER 8: Tree-based Methods](https://github.com/junyanyao/ISLR_Python/blob/master/Ch8%20Tree%20Based%20Methods.ipynb)
+>* [CHAPTER 8: Tree-based Methods](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch8%20Tree%20Based%20Methods.ipynb)
 >>* Decision Trees
 >>* Bagging and Random Forests
 >>* Boosting
->* [CHAPTER 9: Support Vector Machines](https://github.com/junyanyao/ISLR_Python/blob/master/Ch9%20Support%20Vector%20Machine.ipynb)
+>* [CHAPTER 9: Support Vector Machines](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch9%20Support%20Vector%20Machine.ipynb)
 >>* Support Vector Classifier
 >>* Support Vectir Machine
 >>* SVM with Multiple Classes
->* [CHAPETER 10: Unsupervised Learning](https://github.com/junyanyao/ISLR_Python/blob/master/Ch10%20Unsupervised%20Learning.ipynb)
+>* [CHAPETER 10: Unsupervised Learning](https://nbviewer.jupyter.org/github/junyanyao/ISLR_Python/blob/master/Ch10%20Unsupervised%20Learning.ipynb)
 >>* PCA
 >>* Cluster Methods
 
