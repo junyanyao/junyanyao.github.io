@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 #excerpt: "something about me"
 header:
-    overlay_image: /images/poser_me.jpg
+    overlay_image: /images/poster_me.jpg
 ---
 
 
