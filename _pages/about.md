@@ -3,7 +3,7 @@ layout: single
 title: "About me"
 permalink: /about/
 author_profile: true
-excerpt: "something about me"
+#excerpt: "something about me"
 header:
     overlay_image: "/images/poser_me.jpg"
 ---
