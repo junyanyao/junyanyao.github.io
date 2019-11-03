@@ -116,8 +116,8 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:yaojunyan1202@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-linkedin-in"
+    - label: "Linkedin"
+      icon: "fas fa-fw fa-linkedin-square"
       url: "https://www.linkedin.com/in/junyanyao/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
