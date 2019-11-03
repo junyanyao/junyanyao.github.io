@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Statistical Learning in Python"
+    url: /ISLR_Python/
   - title: "Multilevel Modeling Growth Curve"
     url: https://nbviewer.jupyter.org/github/junyanyao/MLM_GrowthCurve/blob/master/Python_VERSION_mlm.ipynb
   - title: "Text Analysis"
