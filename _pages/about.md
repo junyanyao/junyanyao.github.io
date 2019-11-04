@@ -4,8 +4,8 @@ title: "About me"
 permalink: /about/
 author_profile: true
 #excerpt: "something about me"
-header:
-    overlay_image: /images/poster_me.jpg
+#header:
+#    overlay_image: /images/poster_me.jpg
 ---
 
 
@@ -14,3 +14,7 @@ I work as Quantitative Operations Analyst in an instititional broker firm. I am 
 
 
 > **Please click for my [Linkedin Profile](https://www.linkedin.com/in/junyanyao/) and [Resume](./resume.pdf)**
+
+
+
+![](/images/poster_me.jpg)

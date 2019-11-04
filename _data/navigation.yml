@@ -4,8 +4,8 @@ main:
     url: /about/
   - title: "Statistical Learning in Python"
     url: /ISLR_Python/
-  - title: "Text Analysis"
-    url: https://github.com/junyanyao/poster/blob/master/poster_v2.pdf
+  #- title: "Text Analysis"
+  #  url: https://github.com/junyanyao/poster/blob/master/poster_v2.pdf
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
