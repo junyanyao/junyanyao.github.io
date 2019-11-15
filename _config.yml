@@ -121,7 +121,7 @@ author:
       url: "https://www.linkedin.com/in/junyanyao/"
     - label: "Resume"
       icon: ""
-      url: ./resume.pdf
+      url: "./resume.pdf"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
