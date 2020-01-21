@@ -1,0 +1,44 @@
+---
+title: "Missing Data"
+author: "Junyan Yao"
+date: "1/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Outline of this article
+* Missing Data Mechanisms
+* Simple missing data fixes: LVCF, mean imputation, dummy variable methods
+* More complicated missing data fixes: Weighting, hotdecking, regression imputation
+* Building blocks and overview of multiple imputation, including regresion imputation with noise
+* More advanced imputation and other missing data methods
+
+## Examining Patterns of Missing Data
+### Cases:
+
+* Univariate Nonresponse:
+![Univariate Nonresponse](/Users/YaoJunyan/Documents/pic/a.jpeg)
+* Multivariate Two Patterns:
+![Multovariate Two Patterns](/Users/YaoJunyan/Documents/pic/b.png)
+* Monotone:
+![Monotone](/Users/YaoJunyan/Documents/pic/c.png)
+* General:
+![General](/Users/YaoJunyan/Documents/pic/d.png)
+
+
+
+** Notation and explanation
+Let R be the matrix of variables $R_{1}$, $R_{2}$,...,$R_{p}$, corresponding to variables in dataset, $Y_{1}$, $Y_{2}$, ...,$Y_{p}$, that indicate whether a given value of the corresponding Y variable is observed(=1) or missing(=0)
+
+## Missing Data Mechanisms:
+* Missing Completely at Random (MCAR) 
+    * $P(R_{1}, R_{2}, ..., R_{p}|Y_{1}, Y_{2},...,Y_{p}) = P(R_{1}, R_{2}, ..., R_{p})$
+* Missing at Random (MAR)
+    * $P(R_{1},...,R_{p}| Y_{1},...,Y_{p})= P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})$ Missingness depends on observed values of the variables
+* Not Missing at Random(NMAR), also called Missing Not at Random
+    * $$P(R_{1},...,R_{p}| Y_{1},...,Y_{p}) \neq P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})$ Missingness depends on the values of the items that are missing!
+
+
