@@ -1,5 +1,5 @@
 ---
-title: "Complete guide of Dealing with Missing Data"
+title: "Complete Guide of Dealing with Missing Data"
 date: 2020-01-29
 tags: [missing data, multiple imputation]
 ---
