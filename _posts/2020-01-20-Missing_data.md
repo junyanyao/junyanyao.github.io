@@ -29,11 +29,11 @@ tags: [missing data; multiple imputation]
 
 
 -   Missing Completely at Random (MCAR)
-    - (<a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" title="P(R_{1}, R_{2}, ..., R_{p}|Y_{1}, Y_{2},...,Y_{p}) = P(R_{1}, R_{2}, ..., R_{p})" /></a>)
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" title="P(R_{1}, R_{2}, ..., R_{p}|Y_{1}, Y_{2},...,Y_{p}) = P(R_{1}, R_{2}, ..., R_{p})" /></a>
 -   Missing at Random (MAR)
-    - (<a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})=&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})=&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" title="P(R_{1},...,R_{p}| Y_{1},...,Y_{p})= P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})" /></a>)) Missingness depends on observed values of the variables
+    -<a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})=&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})=&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" title="P(R_{1},...,R_{p}| Y_{1},...,Y_{p})= P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})" /></a> Missingness depends on observed values of the variables
 -   Not Missing at Random(NMAR), also called Missing Not at Random
-    - (<a href="https://www.codecogs.com/eqnedit.php?latex=$P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})&space;\neq&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})&space;\neq&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" title="$P(R_{1},...,R_{p}| Y_{1},...,Y_{p}) \neq P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})" /></a>) Missingness depends on the values of the items that are missing!
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=$P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})&space;\neq&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$P(R_{1},...,R_{p}|&space;Y_{1},...,Y_{p})&space;\neq&space;P(R_{1},...,R_{p}|&space;Y^{obs}_{1},...,Y^{obs}_{p})" title="$P(R_{1},...,R_{p}| Y_{1},...,Y_{p}) \neq P(R_{1},...,R_{p}| Y^{obs}_{1},...,Y^{obs}_{p})" /></a>) Missingness depends on the values of the items that are missing!
 
 MCAR and MAR are both ignorable missing data mechanisms. The term ignorable reflects that fact that for these missing data mechanisms we can make inferences using our data without having to include a model for the missing data mechanism within our analysis model. NMAR is a non-ignorable missing data mechanism,
 
@@ -58,12 +58,12 @@ MCAR and MAR are both ignorable missing data mechanisms. The term ignorable refl
 #### Methods that throw away data
 
 -   Non-response weighting
-    -   Suppose only one variable has missing data, we can build a model to predict whether a vlaue is observed using observed values from the other variables. Then use these predicted probabilities to create survey weights of the form (<a href="https://www.codecogs.com/eqnedit.php?latex=1/P(\frac{R_{i}}{X_{i}})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?1/P(\frac{R_{i}}{X_{i}})" title="1/P(\frac{R_{i}}{X_{i}})" /></a>) to make the complete case sample representative of the full sample once again. Typically we normalize by multiplying the weights by the overall (marginal) probability of missingness, *P*(*R*<sub>*i*</sub>). This way the weights will sum to the number of people left in the complete case sample. ![](/images/weighting.png)
+    -   Suppose only one variable has missing data, we can build a model to predict whether a vlaue is observed using observed values from the other variables. Then use these predicted probabilities to create survey weights of the form <a href="https://www.codecogs.com/eqnedit.php?latex=1/P(\frac{R_{i}}{X_{i}})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?1/P(\frac{R_{i}}{X_{i}})" title="1/P(\frac{R_{i}}{X_{i}})" /></a> to make the complete case sample representative of the full sample once again. Typically we normalize by multiplying the weights by the overall (marginal) probability of missingness, *P*(*R*<sub>*i*</sub>. This way the weights will sum to the number of people left in the complete case sample. ![](/images/weighting.png)
 
 #### Methods that don't throw away data
 
 -   Hotdecking
-    -   Replaces missing values using other values found in the dataset.For example, for each person with a missing value on variable Y, find another person who has all the same values (or close to the same values) on observed variables (<a href="https://www.codecogs.com/eqnedit.php?latex=X_{1},&space;X_{2},X_{3}..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{1},&space;X_{2},X_{3}..." title="X_{1}, X_{2},X_{3}..." /></a>), and use that person's Y value.
+    -   Replaces missing values using other values found in the dataset.For example, for each person with a missing value on variable Y, find another person who has all the same values (or close to the same values) on observed variables <a href="https://www.codecogs.com/eqnedit.php?latex=X_{1},&space;X_{2},X_{3}..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{1},&space;X_{2},X_{3}..." title="X_{1}, X_{2},X_{3}..." /></a>, and use that person's Y value.
 -   Regression imputation
     -   Suppose only one variable has missing data, within the complete case sample, build a model that predicts the values of that variable. ![](/images/regression.png)
 
@@ -112,22 +112,6 @@ Implementation in R:
  library(mi)
 ```
 
-    ## Loading required package: Matrix
-
-    ## Loading required package: stats4
-
-    ## mi (Version 1.0, packaged: 2015-04-16 14:03:10 UTC; goodrich)
-
-    ## mi  Copyright (C) 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015 Trustees of Columbia University
-
-    ## This program comes with ABSOLUTELY NO WARRANTY.
-
-    ## This is free software, and you are welcome to redistribute it
-
-    ## under the General Public License version 2 or later.
-
-    ## Execute RShowDoc('COPYING') for details.
-
 ``` r
 # load the data
 data(nlsyV)
@@ -145,11 +129,12 @@ mdf = missing_data.frame(nlsyV)
 image(mdf)
 ```
 
-![](2020-01-20-Missing_data_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](/images/mdf.png)
 
 ``` r
 hist(mdf)
 
+![](/images/hist_mdf.png)
 
 # Examine the default choices for imputation models
 show(mdf)
@@ -184,11 +169,6 @@ show(mdf)
 mdf <- change(mdf, y = c('momed', 'momrace'), what = 'type', to = 'un') # changed ordered to unordered
 ```
 
-    ## NOTE: In the following pairs of variables, the missingness pattern of the first is a subset of the second.
-    ##  Please verify whether they are in fact logically distinct variables.
-    ##      [,1]     [,2]    
-    ## [1,] "b.marr" "income"
-
 ``` r
 show(mdf)
 ```
@@ -221,11 +201,8 @@ show(mdf)
 # Impute until converged
 imputations <- mi(mdf)
 converged <- mi2BUGS(imputations)
-
-plot(converged)
 ```
 
-![](2020-01-20-Missing_data_files/figure-markdown_github/unnamed-chunk-1-2.png)
 
 ``` r
 # Plot diagnostics
@@ -241,12 +218,6 @@ Rhats(imputations) # some values are greater than 1.1
 # Iterate bewtween step 4-6 if necessary
 mdf2 <- change(mdf, y = 'income', what = 'type', to ='nonn')
 ```
-
-    ## NOTE: In the following pairs of variables, the missingness pattern of the first is a subset of the second.
-    ##  Please verify whether they are in fact logically distinct variables.
-    ##      [,1]     [,2]    
-    ## [1,] "b.marr" "income"
-
 ``` r
 imputations2 <- mi(mdf2, n.iter = 60)
 Rhats(imputations2) # much better
