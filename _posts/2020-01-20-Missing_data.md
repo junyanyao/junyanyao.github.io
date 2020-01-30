@@ -1,5 +1,11 @@
-Outline of this article
------------------------
+---
+title: "Complete guide of Dealing with Missing Data"
+date: 2020-01-29
+tags: [missing data; multiple imputation]
+---
+
+# Outline of this article
+
 
 1.  Missing Data Mechanisms
 2.  Simple missing data fixes: LVCF, mean imputation, dummy variable methods
@@ -7,8 +13,8 @@ Outline of this article
 4.  Building blocks and overview of multiple imputation, including regresion imputation with noise
 5.  More advanced imputation and other missing data methods
 
-Examining Patterns of Missing Data
-----------------------------------
+
+## Examining Patterns of Missing Data
 
 ### Cases:
 
@@ -17,10 +23,10 @@ Examining Patterns of Missing Data
 -   Monotone: ![Monotone](/Users/YaoJunyan/Documents/pic/c.png)
 -   General: ![General](/Users/YaoJunyan/Documents/pic/d.png)
 
-\*\* Notation and explanation Let R be the matrix of variables *R*<sub>1</sub>, *R*<sub>2</sub>,...,*R*<sub>*p*</sub>, corresponding to variables in dataset, *Y*<sub>1</sub>, *Y*<sub>2</sub>, ...,*Y*<sub>*p*</sub>, that indicate whether a given value of the corresponding Y variable is observed(=1) or missing(=0)
+ Notation and explanation Let R be the matrix of variables *R*<sub>1</sub>, *R*<sub>2</sub>,...,*R*<sub>*p*</sub>, corresponding to variables in dataset, *Y*<sub>1</sub>, *Y*<sub>2</sub>, ...,*Y*<sub>*p*</sub>, that indicate whether a given value of the corresponding Y variable is observed(=1) or missing(=0)
 
-Missing Data Mechanisms:
-------------------------
+## Missing Data Mechanisms:
+
 
 -   Missing Completely at Random (MCAR)
     -   *P*(*R*<sub>1</sub>, *R*<sub>2</sub>, ..., *R*<sub>*p*</sub>|*Y*<sub>1</sub>, *Y*<sub>2</sub>, ..., *Y*<sub>*p*</sub>)=*P*(*R*<sub>1</sub>, *R*<sub>2</sub>, ..., *R*<sub>*p*</sub>)
