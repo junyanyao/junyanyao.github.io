@@ -11,7 +11,6 @@ tags: [missing data; multiple imputation]
 2.  Simple missing data fixes: LVCF, mean imputation, dummy variable methods
 3.  More complicated missing data fixes: Weighting, hotdecking, regression imputation
 4.  Building blocks and overview of multiple imputation, including regresion imputation with noise
-5.  More advanced imputation and other missing data methods
 
 
 ## Examining Patterns of Missing Data
@@ -100,9 +99,19 @@ Assume ps is a matrix of probabilities obtained from fitted model combined with 
 
 The part within the parentheses will create a vector of 0's except the one category where the draw occurred and that slot will now show its category number rather than a 1. So when you sum all you get back is that category number.
 
-MI Strengths: \* Maintains entire dataset \* Uses all available information \* Weak (more plausible) assumptions about the missing data mechanism \* Properly reflects two kinds of uncertainty about the missing data (so, confidence intervals have correct coverage properties) \* Sampling uncertainty \* Model uncertainty \* Maintains relationships between variables \* One set of imputed datasets can be used for many analyses (allowing for release, for example, of public use imputed datasets)
+MI Strengths: 
+* Maintains entire dataset 
+* Uses all available information 
+* Weak (more plausible) assumptions about the missing data mechanism 
+* Properly reflects two kinds of uncertainty about the missing data (so, confidence intervals have correct coverage properties) 
+    - Sampling uncertainty 
+    - Model uncertainty 
+* Maintains relationships between variables 
+* One set of imputed datasets can be used for many analyses (allowing for release, for example, of public use imputed datasets)
 
-MI Weaknesses: \* Can be more complex to implement (though with current software this is becoming less and less of an issue) \* Have to rely on modeling assumptions
+MI Weaknesses: 
+* Can be more complex to implement (though with current software this is becoming less and less of an issue) 
+* Have to rely on modeling assumptions
 
 How does it work? 1. Specify a model for the complete data, and fit 2. Use this model to predict missing values 3. Repeat 1-2 M times to create M complete datasets 4. Perform your desired analysis in each dataset
 
@@ -133,9 +142,9 @@ image(mdf)
 
 ``` r
 hist(mdf)
-
+```
 ![](/images/hist_mdf.png)
-
+``` r 
 # Examine the default choices for imputation models
 show(mdf)
 ```
@@ -274,3 +283,6 @@ glm(formula = ppvtr.36 ~ first+ b.marr+ scale(income) + momage + factor(momed) +
     ##   (228 observations deleted due to missingness)
     ## Null Deviance:       63870 
     ## Residual Deviance: 40100     AIC: 1448
+
+
+Other R package such as 'mice' can do the mulitple imputation effectively. For more Rhat Statistics explanation, please refer to Gelman-Robin paper [here](http://www.stat.columbia.edu/~gelman/research/published/brooksgelman2.pdf)
