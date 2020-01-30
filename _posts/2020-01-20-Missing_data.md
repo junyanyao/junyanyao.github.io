@@ -241,6 +241,12 @@ Rhats(imputations2) # much better
     ##   sd_ppvtr.36     sd_b.marr     sd_income      sd_momed    sd_momrace 
     ##     1.0023546     1.0118700     1.0130152     1.0154492     1.0287456
 
+
+Visualize the computed missing values
+Red lines/dots are computed; blue lines/dots are observed;
+
+![](/images/computed.png)
+
 ``` r
 # Run final pooled analysis
 analysis <- pool(ppvtr.36 ~ first + b.marr + scale(income) + momage + momed + momrace, imputations2, m = 5)
