@@ -1,7 +1,7 @@
 ---
 title: "Complete guide of Dealing with Missing Data"
 date: 2020-01-29
-tags: [missing data; multiple imputation]
+tags: [missing data, multiple imputation]
 ---
 
 # Outline of this article
@@ -113,7 +113,11 @@ MI Weaknesses:
 * Can be more complex to implement (though with current software this is becoming less and less of an issue) 
 * Have to rely on modeling assumptions
 
-How does it work? 1. Specify a model for the complete data, and fit 2. Use this model to predict missing values 3. Repeat 1-2 M times to create M complete datasets 4. Perform your desired analysis in each dataset
+How does it work? 
+1. Specify a model for the complete data, and fit 
+2. Use this model to predict missing values 
+3. Repeat 1-2 M times to create M complete datasets 
+4. Perform your desired analysis in each dataset
 
 Implementation in R:
 
@@ -285,4 +289,4 @@ glm(formula = ppvtr.36 ~ first+ b.marr+ scale(income) + momage + factor(momed) +
     ## Residual Deviance: 40100     AIC: 1448
 
 
-Other R package such as 'mice' can do the mulitple imputation effectively. For more Rhat Statistics explanation, please refer to Gelman-Robin paper [here](http://www.stat.columbia.edu/~gelman/research/published/brooksgelman2.pdf)
+Other R package such as 'mice' can do the mulitple imputation effectively as well. For more Gelman-Robin Rhat Statistics explanation, please refer to this paper [here](http://www.stat.columbia.edu/~gelman/research/published/brooksgelman2.pdf)
