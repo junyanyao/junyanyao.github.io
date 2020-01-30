@@ -18,10 +18,10 @@ tags: [missing data; multiple imputation]
 
 ### Cases:
 
--   Univariate Nonresponse: ![Univariate Nonresponse](/Users/YaoJunyan/Documents/pic/a.jpeg)
--   Multivariate Two Patterns: ![Multovariate Two Patterns](/Users/YaoJunyan/Documents/pic/b.png)
--   Monotone: ![Monotone](/Users/YaoJunyan/Documents/pic/c.png)
--   General: ![General](/Users/YaoJunyan/Documents/pic/d.png)
+-   Univariate Nonresponse: ![](/images/a.jpeg)
+-   Multivariate Two Patterns: ![](/images/b.png)
+-   Monotone: ![](/images/c.png)
+-   General: ![](/images/d.png)
 
  Notation and explanation Let R be the matrix of variables *R*<sub>1</sub>, *R*<sub>2</sub>,...,*R*<sub>*p*</sub>, corresponding to variables in dataset, *Y*<sub>1</sub>, *Y*<sub>2</sub>, ...,*Y*<sub>*p*</sub>, that indicate whether a given value of the corresponding Y variable is observed(=1) or missing(=0)
 
@@ -29,7 +29,7 @@ tags: [missing data; multiple imputation]
 
 
 -   Missing Completely at Random (MCAR)
-    -   *P*(*R*<sub>1</sub>, *R*<sub>2</sub>, ..., *R*<sub>*p*</sub>|*Y*<sub>1</sub>, *Y*<sub>2</sub>, ..., *Y*<sub>*p*</sub>)=*P*(*R*<sub>1</sub>, *R*<sub>2</sub>, ..., *R*<sub>*p*</sub>)
+    - (<a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" title="P(R_{1}, R_{2}, ..., R_{p}|Y_{1}, Y_{2},...,Y_{p}) = P(R_{1}, R_{2}, ..., R_{p})" /></a>)
 -   Missing at Random (MAR)
     -   *P*(*R*<sub>1</sub>, ..., *R*<sub>*p*</sub>|*Y*<sub>1</sub>, ..., *Y*<sub>*p*</sub>)=*P*(*R*<sub>1</sub>, ..., *R*<sub>*p*</sub>|*Y*<sub>1</sub><sup>*o**b**s*</sup>, ..., *Y*<sub>*p*</sub><sup>*o**b**s*</sup>) Missingness depends on observed values of the variables
 -   Not Missing at Random(NMAR), also called Missing Not at Random
@@ -41,13 +41,13 @@ MCAR and MAR are both ignorable missing data mechanisms. The term ignorable refl
 
 #### Methods that throw away data
 
--   Complete cases (listwise deletion) ![complete case](/Users/YaoJunyan/Documents/pic/complete_case.png)
--   Complete variables (available case) ![complete\_var](/Users/YaoJunyan/Documents/pic/complete_var.png)
+-   Complete cases (listwise deletion) ![](/images/complete_case.png)
+-   Complete variables (available case) ![](/images/complete_var.png)
 
 #### Methods that don't throw away data
 
--   Mean imputation ![mean imputation](/Users/YaoJunyan/Documents/pic/mean_imputation.png)
--   Last value carried forward ![LVCF](/Users/YaoJunyan/Documents/pic/LVCF.png)
+-   Mean imputation ![](/images/mean_imputation.png)
+-   Last value carried forward ![](/images/LVCF.png)
 -   Dummy variable method
     -   For example, for each predictor variable with missing data, fills in missing values with 0 or the mean and then includes a new variable that is an indicator for missingness for the original variable with missing data.
 -   Reports from others
@@ -58,14 +58,14 @@ MCAR and MAR are both ignorable missing data mechanisms. The term ignorable refl
 #### Methods that throw away data
 
 -   Non-response weighting
-    -   Suppose only one variable has missing data, we can build a model to predict whether a vlaue is observed using observed values from the other variables. Then use these predicted probabilities to create survey weights of the form $1/P(\\frac{R\_{i}}{X\_{i}})$ to make the complete case sample representative of the full sample once again. Typically we normalize by multiplying the weights by the overall (marginal) probability of missingness, *P*(*R*<sub>*i*</sub>). This way the weights will sum to the number of people left in the complete case sample. ![weighting](/Users/YaoJunyan/Documents/pic/weighting.png)
+    -   Suppose only one variable has missing data, we can build a model to predict whether a vlaue is observed using observed values from the other variables. Then use these predicted probabilities to create survey weights of the form $1/P(\\frac{R\_{i}}{X\_{i}})$ to make the complete case sample representative of the full sample once again. Typically we normalize by multiplying the weights by the overall (marginal) probability of missingness, *P*(*R*<sub>*i*</sub>). This way the weights will sum to the number of people left in the complete case sample. ![](/images/weighting.png)
 
 #### Methods that don't throw away data
 
 -   Hotdecking
     -   Replaces missing values using other values found in the dataset.For example, for each person with a missing value on variable Y, find another person who has all the same values (or close to the same values) on observed variables *X*<sub>1</sub>, *X*<sub>2</sub>, *X*<sub>3</sub>..., and use that person's Y value.
 -   Regression imputation
-    -   Suppose only one variable has missing data, within the complete case sample, build a model that predicts the values of that variable. ![regression](/Users/YaoJunyan/Documents/pic/regression.png)
+    -   Suppose only one variable has missing data, within the complete case sample, build a model that predicts the values of that variable. ![](/images/regression.png)
 
 ### Multiple regression imputation with noise
 
