@@ -12,10 +12,12 @@ tags: [missing data, multiple imputation]
 3.  More complicated missing data fixes: Weighting, hotdecking, regression imputation
 4.  Building blocks and overview of multiple imputation, including regresion imputation with noise
 
-
+The way we handle missing data really depends on the missing data mechanisms. It has several cases such as missing completely at random, missing at random and not missing at random. Before that, we first need to go through some patterns that commonly appears as a problem in our dataset.
 ## Examining Patterns of Missing Data
 
-### Cases:
+### Missing data cases in a dataset:
+
+These covers most common situations:
 
 -   Univariate Nonresponse: ![](/images/a.jpeg)
 -   Multivariate Two Patterns: ![](/images/b.png)
@@ -26,6 +28,7 @@ tags: [missing data, multiple imputation]
 
 ## Missing Data Mechanisms:
 
+In this part, we will need to analyze these three situtions before we come up with a solution to ignore/drop/compute missing data.
 
 -   Missing Completely at Random (MCAR)
     - <a href="https://www.codecogs.com/eqnedit.php?latex=P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R_{1},&space;R_{2},&space;...,&space;R_{p}|Y_{1},&space;Y_{2},...,Y_{p})&space;=&space;P(R_{1},&space;R_{2},&space;...,&space;R_{p})" title="P(R_{1}, R_{2}, ..., R_{p}|Y_{1}, Y_{2},...,Y_{p}) = P(R_{1}, R_{2}, ..., R_{p})" /></a>
@@ -38,12 +41,18 @@ MCAR and MAR are both ignorable missing data mechanisms. The term ignorable refl
 
 ### Simple missing data methods:
 
+Once we figure out the missing data mechanism, we can decide to either drop or compute.
+
 #### Methods that throw away data
+
+This is the easy part, two ways to do it- either drop the variable (the column) or just the observations (the row).
 
 -   Complete cases (listwise deletion) ![](/images/complete_case.png)
 -   Complete variables (available case) ![](/images/complete_var.png)
 
 #### Methods that don't throw away data
+
+This method is commonly used in the current research field. This can keep some information that your data want to perserve and also don't confuse people.
 
 -   Mean imputation ![](/images/mean_imputation.png)
 -   Last value carried forward ![](/images/LVCF.png)
@@ -53,6 +62,9 @@ MCAR and MAR are both ignorable missing data mechanisms. The term ignorable refl
     -   For example, we are missing data regarding the fathers of children in a dataset, we can probably fill these values in with mother's report of the values.
 
 ### More complicated missing data methods
+
+This is the hardest part, this method is relatively complicated but can cause less bias in your dataset for further estimation.
+
 
 #### Methods that throw away data
 
